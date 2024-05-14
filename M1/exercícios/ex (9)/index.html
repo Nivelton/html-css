@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>    
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas </h2>
+    <ol type="1" start="1"> 
+        <li>Acordar</li>
+        <li>Ver as notificações no celular</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o Trabalho</li> 
+        <li>Voltar para casa</li>
+        <li>Jantar</li> 
+        <li>Dormir</li>
+
+        <P>Para o bloco acima utlizamos o comando OL (ordered List, ou lista ordenada em portugues) para criar listas ordenadas, desta forma facilitamos o trabalho caso seja necessario fazer a ediçao de um item da lista, o porprio html se encarrega de enumerar os itens da lsita atraves da tag "LI" (List item ou item da lista em portugues). Podemos colocar um paramentro "TYPE" dentro da tag OL para modificar o enumerador utilizado em nossa lista exemplo ABCD.... ou 1234....</P>
+
+    </ol>
+    <!--Para o bloco acima utlizamos o comando OL (ordered List, ou lista ordenada em portugues) para criar listas ordenadas, desta forma facilitamos o trabalho caso seja necessario fazer a ediçao de um item da lista, o porprio html se encarrega de enumerar os itens da lsita atraves da tag "LI" (List item ou item da lista em portugues). Podemos colocar um paramentro "TYPE" dentro da tag OL para modificar o enumerador utilizado em nossa lista exemplo ABCD.... ou 1234....-->
+    <!--Podemos ainda escolher onde a contagem começa utilizando o parametro "START", por exemplo quero que a contagem se inicie no numero 10 a tag fica "OL TYPE ="1" START="10"-->
+    <H2>Listas não Ordenadas</H2>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        
+        <P>Para as listas nao ordenadas utilizamos a TAG "UL", unordered list ou lista nao ordenada em portugues, a dinamica segue mesma utilziando a TAG "lI" para criar a lista. Tbm podemos personalizar o marcador com o  parametro "Type" diferente das lsitas ordenadas nas listas nao ordenadas o Vs Code nao oferece sugestoões mas podemos utlizar: <EM>DISC, CIRCLE E SQUARE</EM></P>
+    </ul>
+       <!-- Para as listas nao ordenadas utilizamos a TAG "UL", unordered list ou lista nao ordenada em portugues, a dinamica segue mesma utilziando a TAG "lI" para criar a lista. Tbm podemos personalizar o marcador com o  parametro "Type" diferente das lsitas ordenadas nas listas nao ordenadas o Vs Code nao oferece sugestoões mas podemos utlizar: DISC, CIRCLE E SQUARE -->
+       
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a"start="4">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        </ol>
+    </ol>
+    
+    <!-- Para o bloco acima foi utlizado lista ordenada com aninhamento de listas, ou seja um lista dentro da outra permitindo a enumeração dos topicos de uma lista dentro de outra lista-->
+
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>PS2:</li>
+        <ul type="square">
+            <li>red dead redemption 2</li>
+            <li>Gta Vice City</li>
+            <li>Gta San andreas</li>
+        </ul>
+        <li>PC:</li>
+        <ul type="square">
+            <li><abbr title="Counter Strike">CS</abbr> 1.6</li>
+            <li>Minecraft</li>
+        </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl> <!--lista de definições, definition list-->
+        <dt>HTML</dt> <!--termo-->
+        <dd>Linguagem de marcação para a criação de um site.</dd> <!--Descrição-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+ 
+</body>
+</html>

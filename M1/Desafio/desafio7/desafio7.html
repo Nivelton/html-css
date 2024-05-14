@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexivel</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem Flexivel</h1>
+    <p>Voce esta olhando para a imagem completa? Experimente amplicar o tamanho da sua janela para aproveitar melhor esta experincia &#x1F61C;</p>
+    <picture>   
+        <source media="(max-width: 720px)" srcset="imagens/praia-p.jpg" type="image/png">
+        <source media="(max-width: 1150px)" srcset="imagens/praia-m.jpg" type="image/png">
+        <img src="imagens/praia-g.jpg" alt="Imagem Praia">
+    </picture>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/Árvore do reggae.mp3" type="audio/mpeg">
+    </audio>
+    
+</body>
+</html>

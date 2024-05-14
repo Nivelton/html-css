@@ -1,0 +1,6 @@
+repositório local/remoto
+
+GIT (repositório local) é um software que armazena todos os seus codigos (todos as versões testes até o original)
+
+ 
+GitHub (repositório remoto)

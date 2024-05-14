@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outra formatações</h1>   
+    <h2>Código-fonte / pré formatado</h2>  <!-- utilizamos no bloco a seguir o envelopamento utilizando as tags CODE (usada para manter o texto mono espaçado, visualmente mais bonito) e a tag PRE utilizada para manter o texto do jeito que digitamos, ou seja pré formatado-->
+    <p>O comando <code>document.getElementeById('teste'</code>) é escrito em linguagem javascript</p>
+    <pre>
+        <code>
+num =int (input ('Digite um numero'))
+if num % 2 == 0:
+    print(f'O numero {num} é PAR')
+else:
+    print(f'O numero{num} é ÍMPAR)
+print('Fim do Programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo:<q>O computador é um burro muito rápido</q></p> <!-- utilizamos a tag "Q" para inserir as aspas em uma citação, na verdade nao só para inserir as aspas mas sim para dar sentido nas aspas informando que é uma citação (semantica)-->
+    <h2>Citações Completas</h2>
+    <p>Segundo Mauricio Samy Silva, no seu livro Criando Sites com HTML:</p>
+    <blockquote cite="https://books.google.com.br/books?id=_HBVQ-w5ZcoC&printsec=frontcover&hl=pt-BR&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, architecto! Commodi corrupti labore minima quia minus explicabo aliquid animi eos fugiat autem aliquam magnam necessitatibus, sunt odit sint placeat vitae.
+    </blockquote>
+    <!-- para o bloco acima utilziamo a Tag "BLOCKQUOTE" para citar um paragrafo ou trecho de qualquer coisa, usando esta tag a citação fica deslocada a direita e os mecanismos de busca entendem que é uma citação e nao simplesmente uma formatação de texto (semantica), dentro da TAG podemos utilziar o parametro "CITE"  a fim de indicar o link de onde estamos retirando a citação, lembrando que este link nao irá aparecer no site, mas novamente conseguimos dar sentido para os motores de busca.-->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <!--Sempre que queremos utilizar uma abreviação podemos utilizar a tag "ABBR" com ela podemos inserir o que siginifica aquela abreviação facilitando a leitura de pessoas que talves nao tenham o conhecimento técnico sobre o assunto que estamos falando -->
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a Criar coisas em HTML.</bdo></p>
+</body>
+</html>
