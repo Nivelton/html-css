@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt arial;
+        }
+        .container {
+            display: flex; /* Usa o layout flexível para alinhar itens lado a lado */
+            align-items: flex-start; /* Alinha os itens no início da linha */
+        }
+        .container h2 {
+            margin-right: 150px; /* Espaço entre o título e o parágrafo */
+        }
+        #A {
+            color: red;
+        }
+        mark {
+            background-color: transparent; /* Remove a cor de fundo padrão */
+            border: 2px dotted rgb(255, 0, 0); /* Adiciona uma borda pontilhada */
+            padding: 0 4px; /* Adiciona algum espaçamento interno */
+            border-radius: 3px; /* Adiciona bordas arredondadas */
+            color: rgb(0, 0, 0); /* Define a cor do texto dentro do <mark> */
+        }
+        .side-by-side {
+            display: flex;
+            flex-direction: column; /* Alinha as seções verticalmente */
+            margin-top: 20px; /* Espaço acima da seção side-by-side */
+        }
+        .side-by-side > div {
+            margin-bottom: 30px; /* Espaço entre Atribuição simples e Auto-atribuições */
+        }
+        .auto-atribuições-container {
+            display: flex;
+            align-items: flex-start; /* Alinha o parágrafo ao lado do conteúdo */
+        }
+        .auto-atribuições-container p {
+            margin-right: 20px; /* Espaço entre o código e o parágrafo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Somas</h2>
+            <p>
+                5 + 2 = 7 <br>
+                5 - 2 = 3 <br>
+                5 * 2 = 10 <br>
+                5 / 2 = 2.5 <br>
+                5 % 2 = 1 <br>
+                5 ** 2 = 25
+            </p>
+        </div>
+        <div>
+            <h2>Ordem de soma</h2>
+            <p id="A">
+                1º: ( ) <br>
+                2º: ** <br>
+                3º: * / % <br>
+                4º: + -
+            </p>
+        </div>
+    </div>
+    
+    <div class="side-by-side">
+        <div>
+            <h2>Atribuição simples</h2>
+            <p>
+                var a = 5 + 3 == 8<br>
+                var b = a % 5 == 3<br>
+                var c = 5 * <mark>b ** 2</mark> == 45<br>
+                var d = 10 - <mark>a / 2</mark> == 6<br>
+                var e = <mark>6 * 2</mark> / d == 2<br>
+                var f = <mark>b % e</mark> + <mark>4 / e</mark> == 3<br>
+            </p>
+        </div>
+        <div class="auto-atribuições-container">
+            <div>
+                <h2>Auto-atribuições</h2>
+                <p>
+                    var n = 3 <br>
+                    n = n + 4 <br>
+                    n = n - 5 <br>
+                    n = n * 4 <br>
+                    n = n / 2 <br>
+                    n = n ** 2 <br>
+                    n = n % 5 = 1 <br>
+                </p>
+            </div>
+            <p>
+                <br>
+                <br>
+                <br>n += 4 <br>
+                n -= 5 <br>
+                n *= 4 <br>
+                n /= 2 <br>
+                n **= 2 <br>
+                n %= 5
+            </p>
+        </div>
+    </div>
+</body>
+</html>
