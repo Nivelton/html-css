@@ -22,16 +22,22 @@
 <body>
     <h1>Olá, mundo!</h1>
     <p>\0/</p>
-    
     <script>
+        // parse == parsear
         // Number.parseInt inteiro
         // Number.parseFloat Quebrado
-        // Number(n) Ambos
+        // Number(n) Ambos (mas nem sempre será u)
         // String(n) ou (n)ToString
+        // '+' tanto para adição, quanto para concatenação
+        // (number + number) adição // (string + string) concatenação
+        // s.length / Quantos caracteres a string tem
+        // s.toUpperCase() tudo MAIÚSCULAS
+        // s.toLowerCase() tudo MINÚSCULAS
         var n1 = Number.parseInt(window.prompt ('Digite um número:'))
         var n2 = Number.parseInt(window.prompt ('Digite outro número:'))
-        var s = n1 + n2 
-        window.alert ('E a soma é: ' + s)
+        var s = n1 + n2
+        window.alert (`a soma entre ${n1} e ${n2} é igual a ${s}`) 
+        //window.alert ('E a soma é: ' + s)//
     </script>
 </body>
 </html>
