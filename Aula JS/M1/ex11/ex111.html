@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            font: normal 18px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle de Brasileiros </h1>
+    Digite seu país de origem : <input type="text" name="txt" id="txt">
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+        var txtn = window.document.querySelector('input#txt')
+        var res = window.document.querySelector('div#res')
+        var país = (txtn.value)
+        
+        if (país == 'Brasil') {
+            res.innerHTML = `<p>Você é brasileiro</p>`}
+             else {
+            res.innerHTML = `<p>Você é estrangeiro</p>`
+            }
+            res.innerHTML += `<p>Isso porque você nasceu em ${país}</p>`
+        }
+    </script>
+</body>
+</html>
