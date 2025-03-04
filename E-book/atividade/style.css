@@ -1,0 +1,44 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: #176CBB;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo{
+    display: inline;
+}
+
+.container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        align-items: center;
+}
+
+.container div{
+    background-color:#398AD6;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.content div{
+    padding: 20px;
+    width: 500px;
+}
+
+.content img{
+    border-radius: 20px;
+}
